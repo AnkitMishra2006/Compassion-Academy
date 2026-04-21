@@ -4,21 +4,12 @@ import { useReveal } from "@/hooks/useReveal";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import {
-  ACADEMICS_META,
   ACADEMICS_HERO,
   ACADEMICS_PROGRAMS,
   ACADEMICS_CTA,
 } from "@/constants/content";
 
 export const Route = createFileRoute("/academics")({
-  head: () => ({
-    meta: [
-      { title: ACADEMICS_META.title },
-      { name: "description", content: ACADEMICS_META.description },
-      { property: "og:title", content: ACADEMICS_META.ogTitle },
-      { property: "og:description", content: ACADEMICS_META.ogDescription },
-    ],
-  }),
   component: AcademicsPage,
 });
 

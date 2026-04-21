@@ -6,7 +6,6 @@ import { useReveal } from "@/hooks/useReveal";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import {
-  CONTACT_META,
   CONTACT_HERO,
   CONTACT_FORM,
   CONTACT_INFO,
@@ -14,14 +13,6 @@ import {
 } from "@/constants/content";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: CONTACT_META.title },
-      { name: "description", content: CONTACT_META.description },
-      { property: "og:title", content: CONTACT_META.ogTitle },
-      { property: "og:description", content: CONTACT_META.ogDescription },
-    ],
-  }),
   component: ContactPage,
 });
 

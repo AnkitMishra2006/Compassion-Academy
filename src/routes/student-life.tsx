@@ -3,7 +3,6 @@ import { useReveal } from "@/hooks/useReveal";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import {
-  LIFE_META,
   LIFE_HERO,
   LIFE_FEATURES,
   LIFE_FEATURES_SECTION,
@@ -14,14 +13,6 @@ import {
 } from "@/constants/content";
 
 export const Route = createFileRoute("/student-life")({
-  head: () => ({
-    meta: [
-      { title: LIFE_META.title },
-      { name: "description", content: LIFE_META.description },
-      { property: "og:title", content: LIFE_META.ogTitle },
-      { property: "og:description", content: LIFE_META.ogDescription },
-    ],
-  }),
   component: StudentLifePage,
 });
 

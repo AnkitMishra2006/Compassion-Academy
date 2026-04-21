@@ -4,7 +4,6 @@ import { useReveal } from "@/hooks/useReveal";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import {
-  ADMISSIONS_META,
   ADMISSIONS_HERO,
   ADMISSIONS_STEPS,
   ADMISSIONS_STEPS_SECTION,
@@ -15,14 +14,6 @@ import {
 } from "@/constants/content";
 
 export const Route = createFileRoute("/admissions")({
-  head: () => ({
-    meta: [
-      { title: ADMISSIONS_META.title },
-      { name: "description", content: ADMISSIONS_META.description },
-      { property: "og:title", content: ADMISSIONS_META.ogTitle },
-      { property: "og:description", content: ADMISSIONS_META.ogDescription },
-    ],
-  }),
   component: AdmissionsPage,
 });
 

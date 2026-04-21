@@ -3,7 +3,6 @@ import { ArrowRight, Sparkles, Star, Quote } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 import { Section } from "@/components/Section";
 import {
-  HOME_META,
   HOME_HERO,
   HERO_STATS,
   HOME_VALUES,
@@ -17,14 +16,6 @@ import {
 } from "@/constants/content";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: HOME_META.title },
-      { name: "description", content: HOME_META.description },
-      { property: "og:title", content: HOME_META.ogTitle },
-      { property: "og:description", content: HOME_META.ogDescription },
-    ],
-  }),
   component: HomePage,
 });
 

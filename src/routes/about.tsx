@@ -4,7 +4,6 @@ import { useReveal } from "@/hooks/useReveal";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import {
-  ABOUT_META,
   ABOUT_HERO,
   ABOUT_STORY,
   ABOUT_PILLARS,
@@ -14,14 +13,6 @@ import {
 } from "@/constants/content";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: ABOUT_META.title },
-      { name: "description", content: ABOUT_META.description },
-      { property: "og:title", content: ABOUT_META.ogTitle },
-      { property: "og:description", content: ABOUT_META.ogDescription },
-    ],
-  }),
   component: AboutPage,
 });
 
